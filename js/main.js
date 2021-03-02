@@ -74,3 +74,21 @@ if(score > 70){
 }else{
   console.log("bad");
 }
+
+
+let shopping = ['milk', 'rice', 'apple', 'banana', 'grape'];
+shopping[0];
+
+
+let money = 2000;
+
+console.log(money*2);
+
+
+
+let x = 0;
+
+while( x < 10000){
+  console.log('現在の値は${x}です');
+  x++;
+}
