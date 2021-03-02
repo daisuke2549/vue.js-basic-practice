@@ -36,3 +36,41 @@ function square(number) {
   factorial(2);
 
 
+const downtown ={
+    name : 'ダウンタウン',
+    boke : 'm松本ひとし',
+    tsukkomi : '浜田'
+}  
+
+
+const chidori ={
+  name : 'ダウンタウン',
+  boke : 'm松本ひとし',
+  tsukkomi : '浜田'
+}  
+
+
+const introduce = (combi) => {
+  console.log('コンビ名は${combi.name}です。')
+}
+
+introduce(downtown);
+introduce(chidori);
+
+
+
+let icecream = "lemon";
+if (icecream === "chocolate"){
+  alert('やった、チョコレートアイス大好き！');
+} else {
+  alert('あれれ、でもチョコレートは私のお気に入り......');
+}
+
+
+
+const score = 60;
+if(score > 70){
+  console.log("good");
+}else{
+  console.log("bad");
+}
