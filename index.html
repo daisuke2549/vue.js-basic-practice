@@ -21,17 +21,82 @@
 </form>
 </div> -->
 
-<div id="app">
-    <p>{{message.split('').reverse().join('')
-    }}</p>
+<!-- <div id="app">
     <p>{{reversedMessage
     }}</p>
 
+    <p>{{reversedMessageMethod()
+    }}</p>
 
 
+
+</div> -->
+
+<!-- <div id="app">
+    <p>
+        base price: <input type ="text" v-model ="basePrice" >
+    </p>
+    <p>
+        tax included price: <input type ="text"  v-model ="taxIncludedPrice">
+    </p>
+</div> -->
+<!-- 
+<div id="app">
+    <h2>Computed</h2>
+
+    <ol>
+        <li>{{ComputedNumber}}</li>
+        <li>{{ComputedNumber}}</li>
+        <li>{{ComputedNumber}}</li>
+    </ol>
+
+
+    <h2>Methods</h2>
+    <ol>
+        <li>{{methodsNumver()}}</li>
+        <li>{{methodsNumver()}}</li>
+        <li>{{methodsNumver()}}</li>
+    </ol>
 </div>
+ -->
+
+<!-- 
+<div id="app">
+<p  v-if="color === 'red'">Stop</p>
+
+<p v-else-if ="color === 'yellow'">Caution</p>
+
+<p v-else-if ="color === 'green'">Go</p>
+
+<p v-else>NOt red/yellow/green</p>
+
+</div> -->
 
 
+
+<!-- <div id="app">
+ <p v-show="toggle">hello vue.js</p>
+<p>Goodbye</p> -->
+
+
+<!-- 
+
+<div id="app">
+    <p>
+        {{message}}
+    </p>
+    <button v-on:click="clickHandler('Vue.js')"> 
+        Click2
+    </button>
+</div>
+ -->
+
+
+<div id="app">
+    <button  v-on:click.once="clickHandler">NOW</button>
+
+    <p>{{message}}</p>
+</div>
 
 
 
@@ -40,5 +105,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/fizzbuzz.js"></script>
 </body>
 </html>

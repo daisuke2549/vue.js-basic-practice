@@ -67,10 +67,37 @@
 
 /* 条件付きレンダリング */
 
+// var app = new Vue({
+//     el:'#app',
+//     data: {
+//      toggle:true
+// }
+// })
+
+
+
+// var app = new Vue ({
+//     el:   '#app',
+//     data:{
+//         counter:0,
+//         message:''
+//     },
+//     methods:{
+//         clickHandler:function(message){
+//             this.message = message
+//         }
+//     }
+// })
+
+
 var app = new Vue({
     el:'#app',
-    data: {
-     toggle:true
-}
+    data:{
+        message: ''
+    },
+    methods:{
+        clickHandler: function(){
+　       this.message = new Date().toLocaleTimeString()
+        }
+    }
 })
-
