@@ -5,127 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue.js sample code</title>
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-    <div id="app">
-        {{message}}
-    </div>
-    <div id="app-2">
-        <span v-bind:title="message">
-          Hover your mouse over me for a few seconds
-          to see my dynamically bound title!
-        </span>
-    </div>
-    <div id="app-3">
-        <span v-if ="seen">Now you can see</span>
-    </div>
 
-     <div id="app-4">
-         <ol>
-            <li v-for="todo in todos">
-                {{ todo.text }}
-              </li>
-         </ol>
-     </div>
 
-     <div id="app-5">
-         <p>{{message}}</p>
-         <button  v-on:click = "reverseMessage">Reverse Message</button>
-     </div>
+<!-- <div id="app">
+<h2>TO DO list</h2>
 
-     <div id ="app-6">
-         <p v-if ="error"> エラーです</p>
-     </div>
-     <div id ="app-7">
-        <p v-bind:class ="error_class"> エラーです</p>
-    </div>
+<form action="">
+    <input type="text">
+    <button v-on:click = "addItem">
+       タスク追加
+    </button>
+</form>
+</div> -->
 
-    <div id ="app-8">
-    <p>{{ now }}</p>
-    <button v-on:click="time">現在時刻を表示する</button>
+<div id="app">
+    <p>{{message.split('').reverse().join('')
+    }}</p>
+    <p>{{reversedMessage
+    }}</p>
+
+
+
 </div>
 
+
+
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-<script>
-    var app = new Vue({
-         el:  "#app",     /* el = elements */
-         data:{
-             message:"hello world"
-         }
-    });
-    var app2 = new Vue({
-  el: '#app-2',
-  data: {
-    message: 'You loaded this page on ' + new Date().toLocaleString()
-  }
-  })
-
-  var app3 = new Vue({
-      el: '#app-3',
-      data:{
-          seen:false
-      }
-  })
-
-
-  var app4 = new Vue({
-      el:'#app-4',
-      data:{
-          todos: [
-          { text: 'Learn JavaScript' },
-            { text: 'Learn Vue' },
-            { text: 'Build something awesome' },
-            {text: 'test text'}
-           ]
-      }
-  })
-
-  var app5 = new Vue({
-      el:'#app-5',
-      data:{
-          message:'Hello Vue.js!'
-      },
-      methods:{
-        reverseMessage: function () {
-      this.message = this.message.split('').reverse().join('')
-    }
-    }
-  })
-
-  var app6 = new Vue({
-      el: "#app-6",
-      data:{
-          error:false
-      }
-  });
-
-  var app = new Vue({
-         el:  "#app",     /* el = elements */
-         data:{
-
-
-         }
-  });
-
-  var app = new Vue({
-         el:  "#app-8",     /* el = elements */
-         data:{
-            now: "00:00:00"
-         },
-         methods: {
-             time: function(e){
-                 var date = new Date();
-
-                 this.now = date.getHours() + ":" + date.getMinutes + ":" + date.getSeconds() + ":";
-             }
-         }
-  });
-
-
-
-
-
-</script>
 <script src="./js/main.js"></script>
 </body>
 </html>
