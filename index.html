@@ -10,6 +10,11 @@
 <body>
 
 
+      
+
+
+
+
 <!-- <div id="app">
 <h2>TO DO list</h2>
 
@@ -92,11 +97,28 @@
  -->
 
 
-<div id="app">
+<!-- <div id="app">
     <button  v-on:click.once="clickHandler">NOW</button>
 
     <p>{{message}}</p>
-</div>
+</div> -->
+
+
+
+
+
+
+<ul id="test-code">
+    <li v-for="item in items" :key="item.message">
+      {{ item.message }}
+    </li>
+  </ul>
+
+
+
+
+
+
 
 
 

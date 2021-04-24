@@ -8,6 +8,7 @@
 // })
 
 
+
 /* 算出プロパティーについて */
 // var app = new Vue({
 //     el:'#app',
@@ -90,14 +91,31 @@
 // })
 
 
-var app = new Vue({
-    el:'#app',
-    data:{
-        message: ''
-    },
-    methods:{
-        clickHandler: function(){
-　       this.message = new Date().toLocaleTimeString()
-        }
+// var app = new Vue({
+//     el:'#app',
+//     data:{
+//         message: ''
+//     },
+//     methods:{
+//         clickHandler: function(){
+// 　       this.message = new Date().toLocaleTimeString()
+//         }
+//     }
+// })
+
+
+
+
+
+
+var example1 = new Vue({
+    el: '#tes-code',
+    data: {
+      items: [
+        { message: 'メッセージ' },
+        { message: 'メッセージ2' },
+        { message: 'メッセージ3'}
+      ]
     }
-})
+  })
+  
